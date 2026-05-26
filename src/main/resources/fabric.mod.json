@@ -1,39 +1,41 @@
 {
-	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Chat+",
-"id": "chatplus",
-"description": "Lightweight vanilla-friendly chat improvements."
-	"authors": [
-		"JustAChillGuy"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "MIT",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.client.ExampleModClient"
-		]
-	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.2",
-		"minecraft": ">=26.1",
-		"java": ">=25",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "chatplus",
+  "version": "${version}",
+  "name": "Chat+",
+  "description": "Lightweight vanilla-friendly chat improvements.",
+  "authors": [
+    "JustAChillGuy"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/JustAChillGuy/ChatPlus"
+  },
+  "license": "MIT",
+  "icon": "assets/chatplus/icon.png",
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "com.JustAChillGuy.chatplus.ChatPlus"
+    ],
+    "client": [
+      "com.JustAChillGuy.chatplus.client.ChatPlusClient"
+    ]
+  },
+
+  "mixins": [
+    "chatplus.mixins.json",
+    {
+      "config": "chatplus.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": ">=26.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
 }
