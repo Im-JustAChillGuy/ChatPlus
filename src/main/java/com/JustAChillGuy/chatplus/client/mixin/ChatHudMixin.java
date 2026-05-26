@@ -1,6 +1,6 @@
 package com.JustAChillGuy.chatplus.client.mixin;
 
-import net.minecraft.client.gui.hud.ChatHud;
+import net.minecraft.client.gui.components.ChatComponent;;
 import net.minecraft.text.Text;
 
 import org.spongepowered.asm.mixin.Mixin;
